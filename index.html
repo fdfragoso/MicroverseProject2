@@ -12,25 +12,36 @@
     <h1 id="title">Simple Form</h1>
     <p id="description">Form for microverse trials</p>
     <form action="" id="survey-form">
-      <label id="name-label">Name
+      <label id="name-label">Name<br>
       <input type="text" id="name" placeholder="Type your Name" required>
       </label>
-
-      <label id="email-label">Email
+      <br><br>
+      <label id="email-label">Email<br>
       <input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" 
        required type="email" id="email" placeholder="Enter your Email">
       </label>
-      
-      <label id="number-label">Number
+      <br><br>
+      <label id="number-label">Age<br>
       <input type="number" id="number" min="0" max="100" placeholder="Enter your Age">
-      </label>
+      </label><br><br>
        <select id="dropdown">
         <option value="Student">Student</option>
         <option value="full_time_job">Full Time Job</option>
         <option value="full_time_learner">Full Time Learner</option>
         <option value="others">Others</option>
        </select>
-    </form>
+       <br><br>
+       <label>Would you recommend microverse</label><br>
+       <input type="radio" name="recomendation" value="yes" checked> Yes<br>
+       <input type="radio" name="recomendation" value="no" > No<br>
+       <br><br>
+       <label>What should be improved</label><br>
+       <input type="checkbox" name="improved" value="frontEnd">Front End<br>
+       <input type="checkbox" name="improved" value="backEnd">Back End<br>
+       <input type="checkbox" name="improved" value="wiki">Wiki<br>
+       <input type="checkbox" name="improved" value="forum">Forum<br>
+       <input type="checkbox" name="improved" value="openSource">Open Source<br>
+      </form>
     <!--
 
     Hello Camper!
