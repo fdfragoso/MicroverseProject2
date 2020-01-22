@@ -13,17 +13,23 @@
     <p id="description">Form for microverse trials</p>
     <form action="" id="survey-form">
       <label id="name-label">Name
-      <input type="text" id="name" required>
+      <input type="text" id="name" placeholder="Type your Name" required>
       </label>
 
       <label id="email-label">Email
       <input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" 
-       required type="email" id="email">
+       required type="email" id="email" placeholder="Enter your Email">
       </label>
       
       <label id="number-label">Number
-      <input type="number" id="number" min="0" max="100">
+      <input type="number" id="number" min="0" max="100" placeholder="Enter your Age">
       </label>
+       <select id="dropdown">
+        <option value="Student">Student</option>
+        <option value="full_time_job">Full Time Job</option>
+        <option value="full_time_learner">Full Time Learner</option>
+        <option value="others">Others</option>
+       </select>
     </form>
     <!--
 
