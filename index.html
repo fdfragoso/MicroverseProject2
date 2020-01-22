@@ -12,10 +12,18 @@
     <h1 id="title">Simple Form</h1>
     <p id="description">Form for microverse trials</p>
     <form action="" id="survey-form">
-      <input type="text" id="name">
+      <label id="name-label">Name
+      <input type="text" id="name" required>
+      </label>
+
+      <label id="email-label">Email
       <input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" 
        required type="email" id="email">
-       <input type="number" id="number">
+      </label>
+      
+      <label id="number-label">Number
+      <input type="number" id="number" min="0" max="100">
+      </label>
     </form>
     <!--
 
